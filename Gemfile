@@ -8,7 +8,7 @@ gem 'rails', '3.2.11'
 group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
-  gem 'capybara'
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
 end
 
 
@@ -25,7 +25,7 @@ group :assets do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
   gem 'rspec-rails'
 end
 
