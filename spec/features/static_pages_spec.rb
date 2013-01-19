@@ -1,4 +1,6 @@
-require 'spec_helper'
+require_relative '../spec_helper'
+
+base_title = "SampleApp"
 
 describe "StaticPages" do
   describe "Home page" do
@@ -8,7 +10,7 @@ describe "StaticPages" do
     end
     it "should have Home in title" do
       visit '/static_pages/home'
-      page.should have_title('Home | SampleApp')
+      page.should have_title('Home | '+base_title)
     end
   end
 
@@ -19,7 +21,7 @@ describe "StaticPages" do
   	end
     it "should have Help in title" do
       visit '/static_pages/help'
-      page.should have_title('Help | SampleApp')
+      page.should have_title('Help | '+base_title)
     end
   end
 
@@ -30,7 +32,7 @@ describe "StaticPages" do
     end
     it "should have About in title" do
       visit '/static_pages/about'
-      page.should have_title('About | SampleApp')
+      page.should have_title('About | '+base_title)
     end
   end
 
@@ -41,7 +43,7 @@ describe "StaticPages" do
     end
     it "should have Contact in title" do
       visit '/static_pages/contact'
-      page.should have_title('Contact | SampleApp')
+      page.should have_title('Contact | '+base_title)
     end
   end
 

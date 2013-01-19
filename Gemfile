@@ -8,6 +8,10 @@ gem 'rails', '3.2.11'
 group :development do
   gem 'sqlite3'
   gem 'rspec-rails'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-spork'
+  gem 'spork'
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
 end
 
@@ -27,6 +31,7 @@ end
 group :test do
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
   gem 'rspec-rails'
+  gem 'rb-fsevent', :require => false
 end
 
 gem 'jquery-rails'
