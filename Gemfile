@@ -35,6 +35,7 @@ group :test do
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
   gem 'rspec-rails'
   gem 'rb-fsevent', :require => false
+  gem 'factory_girl_rails'
 end
 
 gem 'jquery-rails'
