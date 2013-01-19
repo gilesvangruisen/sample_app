@@ -1,7 +1,5 @@
 require_relative '../spec_helper'
 
-base_title = "SampleApp"
-
 describe "StaticPages" do
 
   subject { page }
