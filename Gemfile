@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
-
 gem 'bootstrap-sass'
+gem 'bcrypt-ruby'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -15,6 +15,7 @@ group :development do
   gem 'guard-spork'
   gem 'spork'
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'annotate'
 end
 
 
