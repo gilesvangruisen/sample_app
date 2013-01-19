@@ -1,8 +1,15 @@
 @import "bootstrap";
 
+
 /* mixins, variables, etc. */
 
 $grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
 
 /* universal */
 
@@ -38,8 +45,14 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
+  line-height: 50px;
+}
+
+img.gravatar {
+  margin: auto;
+  display:block;
 }
 
 h2 {
@@ -56,7 +69,9 @@ p {
   line-height: 1.7em;
 }
 
-
+#container { 
+  padding: 50px;
+}
 .hero-unit {
 	min-height: 420px;
 	background: url(hero-bg.jpg) center 35% no-repeat;
@@ -102,7 +117,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
-  max-width: 940px;
+
   margin: auto;
   a {
     color: $gray;
@@ -121,4 +136,28 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+/* miscellaneous */
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  @include box_sizing;
+}
+
+input {
+  height: auto !important;
 }
