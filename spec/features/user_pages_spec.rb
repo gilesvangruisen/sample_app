@@ -9,7 +9,7 @@ describe "UserPages" do
     before { visit user_path(user) }
 
     it { should have_selector('h1',    text: user.name) }
-    it { should have_title( user.name) }
+    it { should have_title(user.name) }
   end
 
   describe "signup page" do
