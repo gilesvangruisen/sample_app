@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'spork'
+
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
@@ -55,6 +56,7 @@ require 'rspec/autorun'
 require 'capybara'
 require 'capybara/rails'
 require 'capybara/rspec'
+require 'rspec-rails'
 
 # Requires supporting ruby files with custom matchers and macros, etc,
 # in spec/support/ and its subdirectories.
