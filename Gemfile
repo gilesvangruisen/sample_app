@@ -14,7 +14,7 @@ group :development do
   gem 'guard-rspec'
   gem 'guard-spork'
   gem 'spork'
-  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'capybara'
   gem 'annotate'
 end
 
@@ -32,7 +32,7 @@ group :assets do
 end
 
 group :test do
-  gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'
+  gem 'capybara'
   gem 'rspec-rails'
   gem 'rb-fsevent', :require => false
   gem 'factory_girl_rails'

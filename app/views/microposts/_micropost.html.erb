@@ -1,0 +1,4 @@
+<li><%= micropost.content %><br /><%= time_ago_in_words(micropost.created_at) %> ago</li>
+<% if current_user?(micropost.user) %>
+<%= link_to "delete", micropost, method: :delete, data: { confirm: "You sure?" }, title: micropost.content %>
+<% end %>
